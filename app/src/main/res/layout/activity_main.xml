@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60sp">
+    <!-- Campo para ingresar una nueva tarea -->
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar nueva tarea" />
+    <!-- Botón para agregar la tarea -->
+    <Button
+        android:id="@+id/buttonAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTask"
+        android:text="Agregar" />
+    <!-- Lista para mostrar las tareas -->
+    <ListView
+        android:id="@+id/listViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd1" />
+    <!-- Campo para editar la tarea seleccionada -->
+    <EditText
+        android:id="@+id/editTextEditTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewTasks"
+        android:hint="Editar tarea"
+        android:visibility="gone" /> <!-- Oculto por defecto -->
+    <!-- Botón para guardar cambios de la tarea editada -->
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEditTask"
+        android:text="Guardar Cambios"
+        android:visibility="gone" /> <!-- Oculto por defecto -->
+    <!-- Botón para eliminar la tarea -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonEdit"
+        android:text="Eliminar"
+        android:visibility="gone" /> <!-- Oculto por defecto -->
+</RelativeLayout>
